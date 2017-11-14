@@ -1,0 +1,78 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>jQuery竖排动画手风琴折叠菜单栏代码</title>
+
+<link rel="stylesheet" href="css/style.css">
+
+<script src="js/jquery.min.js"></script>
+<script src="js/style.js"></script>
+
+</head>
+<body><script src="/demos/googlegg.js"></script>
+<div class="content">
+<!-- .list以下（包含.list）以下为本插件内容，需要的同学可复制里面部分即可。 -->
+	<div class="list">
+		<ul>
+			<li>
+				<p class="title">Item1</p>
+				<ul class='list-se'>
+					<p class="title">Item1</p>
+					<li><p>li-1</p></li>
+				</ul>
+			</li>
+			<li>
+				<p class="title">Item2</p>
+				<ul class='list-se'>
+					<p class="title">Item2</p>
+					<li><p>li-1</p></li>
+					<li><p>li-2</p></li>
+					<li><p>li-3</p></li>
+					<li><p>li-4</p></li>
+					<li><p>li-5</p></li>
+					<li><p>li-6</p></li>
+				</ul>
+			</li>
+			<li>
+				<p class="title">Item3</p>
+				<ul class='list-se'>
+					<p class="title">Item3</p>
+					<li><p>li-1</p></li>
+					<li><p>li-2</p></li>
+					<li><p>li-3</p></li>
+				</ul>
+			</li>
+			<li>
+				<p class="title">Item4</p>
+				<ul class='list-se'>
+					<p class="title">Item4</p>
+					<li><p>li-1</p></li>
+					<li><p>li-2</p></li>
+					<li><p>li-3</p></li>
+				</ul>
+
+			</li>
+			<li>
+				<p class="title">foot5</p>
+			</li>
+		</ul>
+	</div>
+
+</div>
+
+<script type="text/javascript">
+jQuery(document).ready(function($) 
+{
+	$('.list ul li p').clickdown();
+	$('.list-se p[class=title]').clickup();
+	$('.list>ul>li').ad();
+});
+</script>
+
+<div style="text-align:center;margin:30px 0; font:normal 14px/24px 'MicroSoft YaHei';color:#ffffff">
+<p>适用浏览器：360、FireFox、Chrome、Safari、Opera、傲游、搜狗、世界之窗. 不支持IE8及以下浏览器。</p>
+<p>来源：<a href="http://www.lanrenzhijia.com/" target="_blank">懒人素材</a></p>
+</div>
+</body>
+</html>
