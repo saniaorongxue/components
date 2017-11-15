@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8"/>
+    <style href="css/vegas.css"></style>
+    <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+    <script src="js/vegas.js"></script>
+    <style>
+        #example{
+            width: 100vw;
+            height: 100vh;
+            overflow: hidden;
+        }
+        div{
+           height: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div id="example"></div>
+</body>
+</html>
+<script>
+    $('#example,body').vegas({
+        delay: 7000,
+        timer: false,
+        shuffle: true,
+        firstTransition: 'fade',
+        firstTransitionDuration: 5000,
+        transition: 'slideDown2',
+        transitionDuration: 2000,
+        slides: [
+            { src: 'img/1.jpg' },
+            { src: 'img/2.jpg' },
+            { src: 'img/3.jpg' },
+            { src: 'img/4.jpg' }
+        ]
+    });
+</script>
