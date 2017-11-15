@@ -90,7 +90,6 @@ jQuery(document).ready(function() {
 	//Event handler for image link when clicked 
 	jQuery(document).on('click','.imgLink',function(e){
 		e.preventDefault();
-		console.log('imgLink clicked');
 		showOverlay();
 
 		//getting image data
